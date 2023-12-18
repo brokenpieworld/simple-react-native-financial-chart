@@ -26,7 +26,7 @@ Import `SimpleCandlestickChart` from the library and pass in the required data.
 
 ```javascript
 import React from 'react';
-import {SimpleCandlestickChart} from 'simple-react-native-financial-chart';
+import { SimpleCandlestickChart } from 'simple-react-native-financial-chart';
 
 const App = () => {
   const data = [
