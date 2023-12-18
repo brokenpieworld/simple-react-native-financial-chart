@@ -55,4 +55,6 @@ export default App;
 
 Contributions are welcome! 
 
-### Made with ❤️ by Broken Pie
+## Note
+
+Its just an overnight work, not recommended for production
