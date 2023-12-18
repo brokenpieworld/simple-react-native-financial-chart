@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
 import { View, Dimensions, Text, TouchableOpacity } from 'react-native';
 import { Svg, Rect, Line } from 'react-native-svg';
-import { min, max } from 'd3'; // Import min and max from D3.js
 
 const SimpleCandlestickChart = ({ data, style, backgroundColor = 'white', candleColor = { up: 'green', down: 'red' } }) => {
     const [selectedCandle, setSelectedCandle] = useState(null);
     const { width, height } = Dimensions.get('window');
 
-    // Use D3.js min and max functions to find the minimum and maximum values
-    const minValue = min(data.map(d => d.low));
-    const maxValue = max(data.map(d => d.high));
+    // Calculate the minimum and maximum values of high and low in the data
+    let minValue = Number.POSITIVE_INFINITY;
+    let maxValue = Number.NEGATIVE_INFINITY;
+
+    for (const candle of data) {
+        minValue = Math.min(minValue, candle.low);
+        maxValue = Math.max(maxValue, candle.high);
+    }
 
     // Scales
-    const xScale = d3.scaleLinear().domain([0, data.length]).range([0, width]);
-    const yScale = d3.scaleLinear().domain([minValue, maxValue]).range([height, 0]);
+    const xScale = (index) => (width / data.length) * index;
+    const yScale = (value) => ((value - minValue) / (maxValue - minValue)) * height;
 
     const handleCandleSelect = (candle, index) => {
         setSelectedCandle({ candle, x: xScale(index), y: yScale(candle.high) });
