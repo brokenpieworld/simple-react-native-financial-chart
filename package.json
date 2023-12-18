@@ -1,8 +1,8 @@
 {
   "name": "simple-react-native-financial-chart",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Simple React Native Candlestick Chart",
-  "main": "./src/CandlestickChart.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
