@@ -43,9 +43,16 @@ export default App;
 ``````
 
 ## Props
-Prop	Type	Description
-data	array	Array of candlestick data objects.
-style	object	Style properties for the chart container.
-backgroundColor	string	Background color of the chart.
-candleColor	object	Colors for up and down candlesticks.
 
+| Prop              | Type   | Description                                       |
+|-------------------|--------|---------------------------------------------------|
+| `data`            | array  | Array of candlestick data objects.                |
+| `style`           | object | Style properties for the chart container.         |
+| `backgroundColor` | string | Background color of the chart.                    |
+| `candleColor`     | object | Colors for up and down candlesticks.              |
+
+## Contributing
+
+Contributions are welcome! 
+
+### Made with ❤️ by Broken Pie
