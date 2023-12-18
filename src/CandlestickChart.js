@@ -61,4 +61,4 @@ const SimpleCandlestickChart = ({ data, style, backgroundColor = 'white', candle
     );
 };
 
-export default SimpleCandlestickChart;
+module.exports = SimpleCandlestickChart;
