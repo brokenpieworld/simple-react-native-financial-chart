@@ -1,6 +1,6 @@
 {
   "name": "simple-react-native-financial-chart",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple React Native Candlestick Chart",
   "main": "index.js",
   "scripts": {

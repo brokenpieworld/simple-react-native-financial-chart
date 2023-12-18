@@ -1,7 +1,7 @@
-import CandlestickChart from './src/CandlestickChart';
+import SimpleCandlestickChart from './src/CandlestickChart';
 /***
  * Create By www.brokenpie.com
  * Author: Haren Sarma
  * 
  */
-export default CandlestickChart;
+export { SimpleCandlestickChart };

@@ -22,11 +22,11 @@ yarn add simple-react-native-financial-chart
 
 ## Usage
 
-Import `CandlestickChart` from the library and pass in the required data.
+Import `SimpleCandlestickChart` from the library and pass in the required data.
 
 ```javascript
 import React from 'react';
-import CandlestickChart from 'simple-react-native-financial-chart';
+import {SimpleCandlestickChart} from 'simple-react-native-financial-chart';
 
 const App = () => {
   const data = [
@@ -35,7 +35,7 @@ const App = () => {
   ];
 
   return (
-    <CandlestickChart data={data} style={{ flex: 1 }} />
+    <SimpleCandlestickChart data={data} style={{ flex: 1 }} />
   );
 };
 

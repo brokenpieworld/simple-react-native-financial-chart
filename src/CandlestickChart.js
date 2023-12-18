@@ -7,7 +7,7 @@ import * as d3 from 'd3-scale';
  * Author: Haren Sarma
  * 
  */
-const CandlestickChart = ({ data, style, backgroundColor = 'white', candleColor = { up: 'green', down: 'red' } }) => {
+const SimpleCandlestickChart = ({ data, style, backgroundColor = 'white', candleColor = { up: 'green', down: 'red' } }) => {
     const [selectedCandle, setSelectedCandle] = useState(null);
     const { width, height } = Dimensions.get('window');
 
@@ -61,4 +61,4 @@ const CandlestickChart = ({ data, style, backgroundColor = 'white', candleColor 
     );
 };
 
-export default CandlestickChart;
+export default SimpleCandlestickChart;
